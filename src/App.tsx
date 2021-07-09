@@ -14,7 +14,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={Register} />
-      </AuthContextProvider> 
+      </AuthContextProvider>
     </BrowserRouter>
   );
 }
