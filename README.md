@@ -40,7 +40,7 @@ O Router Dom não é um Package desenvolvido em TypeScript, por isso necessário
 (terceiros = comunidade);
 (-D é uma indicação a dependência de desenvolvimento)
 
-Saiba mais sobre [React Router Dom][https://reactrouter.com/]
+Saiba mais sobre [React Router Dom](https://reactrouter.com/)
 
 
 ## Saiba mais
