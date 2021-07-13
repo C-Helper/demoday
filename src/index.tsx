@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { useDispatch, useSelector } from 'react-redux';
+
 
 import './services/firebase';
 

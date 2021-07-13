@@ -1,5 +1,6 @@
 import { useHistory } from 'react-router-dom';
 
+
 import loginImage from '../assets/images/deaf-image.png'; 
 import googleIconImg from '../assets/images/google-icon.svg';
 import logoFlatImg from '../assets/images/logo-flat.png'
@@ -11,6 +12,7 @@ import { useAuth } from '../hooks/useAuth';
 
 
 export function LoginPage() {
+
   const history = useHistory();
   const { user, signInWithGoogle } = useAuth()
 
@@ -25,12 +27,10 @@ export function LoginPage() {
   function NavigateToRegisterPage () {
     history.push('/register');
   }
-  
+
+
 
   return (
-    
-
-
 
     <div id="page-auth">
       <aside>

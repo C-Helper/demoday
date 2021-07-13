@@ -2,10 +2,9 @@ import { useHistory } from 'react-router-dom';
 
 import { auth, firebase } from '../services/firebase';
 
+import backBoxImg from '../assets/images/back-box.jpg';
 import loginImage from '../assets/images/deaf-image.png'; 
 import googleIconImg from '../assets/images/google-icon.svg';
-import '../styles/home.scss';
-
 import animationImg from '../assets/images/icons/animation.svg';
 import arrowImg from '../assets/images/icons/arrow.svg';
 import ballImg from '../assets/images/icons/ball.svg';
@@ -22,6 +21,8 @@ import upDown from '../assets/images/icons/up-down.svg'
 import logoFlatImg from '../assets/images/logo-flat.png'
 import logoDarkImg from '../assets/images/logo-dark.png'
 
+import '../styles/home.scss';
+
 import { Button } from '../components/Button';
 import { useAuth } from '../hooks/useAuth';
 
@@ -30,9 +31,14 @@ export function Home() {
   const history = useHistory();
   
 
-
+  function NavigateToCourses () {
+    history.push('/courses');
+  }
+  
   function NavigateToLoginPage () {
     history.push('/register');
+    
+    
   }
   
 
@@ -43,14 +49,14 @@ export function Home() {
           <div className="inner">
             <nav>
               <ul className="menu-left">
-                <div className="square-home">
+                <div className="square-home-1">
                   <li className="home">
                     <a href="#home">Início</a>
                   </li>
                 </div>
                 <div className="square-home">
                   <li className="my-courses">
-                    <a href="#my-courses">Meus Cursos</a>
+                    <a onClick={NavigateToCourses}>Meus Cursos</a>
                   </li>
                 </div>
                 <div className="square-home">
@@ -86,6 +92,7 @@ export function Home() {
         <hr className="vertical-line"/>
 
       <div className="principal-box">
+        <img className="principal-image" src={backBoxImg}/>
         <p className="box-title">Aprenda como ser dev com Proa</p>
         <p className="box-detail">Proa é uma ong sem fins lucrativos que visa ensinar jovens de baixa renda a programar e ser incluido no mercado dde trabalho</p>
         <div className="box-learn-now">
@@ -219,7 +226,7 @@ export function Home() {
       <div className="bottom-perfil">
         <img className="perfil-img" src={user?.avatar}/>
         <p className="perfil-name">{user?.name}</p>
-        <p className="perfil-class">Cargo</p>
+        <p className="perfil-class"></p>
         <img id="perfil-spoiler" className="arrow-up-down" src={upDown}/>
       </div>
       
