@@ -1,5 +1,4 @@
-import { useHistory } from 'react-router-dom';
-
+import { BrowserRouter, Route, useHistory } from 'react-router-dom';
 
 import loginImage from '../assets/images/deaf-image.png'; 
 import googleIconImg from '../assets/images/google-icon.svg';
