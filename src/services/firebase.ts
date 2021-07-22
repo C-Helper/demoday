@@ -4,13 +4,13 @@ import 'firebase/auth';
 import 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  databaseURL: process.env.REACT_APP_DATABASE_URL,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID
+    apiKey: "AIzaSyClqWfjstOtf1BteErOz3-HfM0VdFIAhEc",
+    authDomain: "c-helper-a2326.firebaseapp.com",
+    databaseURL: "https://c-helper-a2326-default-rtdb.firebaseio.com",
+    projectId: "c-helper-a2326",
+    storageBucket: "c-helper-a2326.appspot.com",
+    messagingSenderId: "460165635275",
+    appId: "1:460165635275:web:d3b49a4d439dd5115f8f4e"
 };
 
 firebase.initializeApp(firebaseConfig);
