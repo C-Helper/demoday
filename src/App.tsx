@@ -14,9 +14,9 @@ function App() {
     <BrowserRouter>
       <AuthContextProvider>
         <Route path="/" exact component={Home} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/register" component={Register} />
-        <Route path="/courses" component={Courses} />
+        <Route path="/login" exact component={LoginPage} />
+        <Route path="/register" exact component={Register} />
+        <Route path="/courses" exact component={Courses} />
       </AuthContextProvider>
     </BrowserRouter>
   );
