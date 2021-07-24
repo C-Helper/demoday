@@ -2,6 +2,9 @@ import { useHistory } from 'react-router-dom';
 
 import { auth, firebase } from '../services/firebase';
 
+import IonIcon from '@reacticons/ionicons';
+import React from 'react';
+
 import backBoxImg from '../assets/images/back-box.jpg';
 import loginImage from '../assets/images/deaf-image.png'; 
 import googleIconImg from '../assets/images/google-icon.svg';
@@ -45,45 +48,53 @@ export function Home() {
   return (
     
       <div id="home-page">
+
         <section id="sidebar">
           <div className="inner">
             <nav>
               <ul className="menu-left">
-                <div className="square-home-1">
-                  <li className="home">
-                    <a href="#home">Início</a>
+                  <li className="list active">
+                    <a href="#">
+                      <span className="icon"><IonIcon name="home-outline"/></span>
+                      <span className="title">Início</span>
+                    </a>
                   </li>
-                </div>
-                <div className="square-home">
-                  <li className="my-courses">
-                    <a onClick={NavigateToCourses}>Meus Cursos</a>
+                  <li className="list">
+                    <a href="#">
+                      <span className="icon"><IonIcon name="book-outline"/></span>
+                      <span className="title">Meus Cursos</span>
+                    </a>
                   </li>
-                </div>
-                <div className="square-home">
-                  <li className="favorites">
-                    <a href="#favorites">Favoritos</a>
+                  <li className="list">
+                    <a href="#">
+                      <span className="icon"><IonIcon name="star-outline"/></span>
+                      <span className="title">Favoritos</span>
+                    </a>
                   </li>
-                </div>
-                <div className="square-home">
-                  <li className="test">
-                    <a href="#test">Teste</a>
+                  <li className="list">
+                    <a href="#">
+                      <span className="icon"><IonIcon name="stopwatch-outline"/></span>
+                      <span className="title">Avaliações</span>
+                    </a>
                   </li>
-                </div>
-                <div className="square-home">
-                  <li className="conclusion">
-                    <a href="#conclusion">Concluídos</a>
+                  <li className="list">
+                    <a href="#">
+                      <span className="icon"><IonIcon name="medal-outline"/></span>
+                      <span className="title">Concluídos</span>
+                    </a>
                   </li>
-                </div>
-                <div className="square-home">
-                  <li className="certified">
-                    <a href="#certified">Certificados</a>
+                  <li className="list">
+                    <a href="#">
+                      <span className="icon"><IonIcon name="school-outline"/></span>
+                      <span className="title">Certificados</span>
+                    </a>
                   </li>
-                </div>
-                <div className="square-home">
-                  <li className="config">
-                    <a href="#config">Configurações</a>
+                  <li className="list">
+                    <a href="#">
+                      <span className="icon"><IonIcon name="settings-outline"/></span>
+                      <span className="title">Configurações</span>
+                    </a>
                   </li>
-                </div>
               </ul>
               </nav>
           </div>
